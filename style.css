@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(32,33,36);
+   
+    color: #9AA0A6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+.wrapper{
+    height: 100vh;
+    min-height: 600px;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: #9AA0A6;
+}
+.navbar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0.5rem 1.3rem;
+}
+.navbar .link{
+    padding: 0.5em .5em;
+    font-size: 15px;
+   
+}
+.navbar .link:hover{
+  text-decoration: underline;
+}
+.navbar  a svg{
+        fill:white;
+        width: 25px;
+        
+}
+.user-name span{
+    font-size: 20px;
+
+}
+.circle-shadow{
+    border-radius: 50%;
+    padding: 6px 1.5px 5px 1px;
+}
+.circle-shadow:hover{
+   background-color:#303134 ;
+}
+
+.circle-shadow1{
+    border-radius: 50%;
+    margin-left: 5px;
+    padding: 6px;
+}
+.circle-shadow1:hover{
+    background-color:#303134 ;
+ }
+
+ /* navbarend */
+
+ /* middle section */
+ .content-section {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.logo-img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    border: 1px solid #4d4d4d;
+    width: 50%;
+    height: 45px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.search-bar:hover {
+    background-color: #303134;
+    border: 1px solid #181818;
+}
+
+.search-bar i {
+    font-size: 18px;
+    color: #9AA0A6;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    height: 30px;
+    margin-right: 15px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    min-width: 150px;
+    width: 90%;
+    color: white;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-btns {
+    margin-top: 20px;
+}
+
+.search-btns button {
+    height: 40px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: #9AA0A6;
+    background-color: #303134;
+}
+
+.search-btns button:hover {
+    border: .5px solid #4d4d4d;
+}
+
+.google-search-btn {
+    width: 120px;
+}
+
+.lucky-search-btn {
+    width: 140px;
+}
+
+.language {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.language p span {
+    color: #8AB4F8;
+    padding: 5px;
+}
+
+.language p span:hover {
+    text-decoration: underline;
+}
+.bar-btn{
+    background-color: transparent;
+    border: none;
+}
+
+/* Footer */
+
+footer{
+    background-color: #171717;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+footer .location{
+    padding: 15px 30px;
+    border-bottom: 1px solid #4d4d4d;
+    font-size: 15px;
+    color: #9AA0A6;
+}
+footer .footer-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    align-items: center;
+    height: 10vh;
+}
+.footer-content ul li{
+    list-style: none;
+    display: inline-block;
+}
+.footer-content a{
+    padding: 15px;
+    font-size: 15px;
+    color: #9AA0A6;
+}
+.footer-content a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width: 1190px){
+ .content-section{
+     display: flex;
+     align-items: center;
+     height: 60vh;
+ }
+ .search-bar {
+       
+    width: 70%;
+    
+}
+}
+@media(max-width: 700px){
+    footer .footer-content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;  
+    }
+    .search-bar {
+       
+        width: 80%;
+        
+    }
+    .logo-img {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    .box-2{
+        margin-top: 20px;
+    }
+    .footer-content a{
+        padding: 15px;
+        font-size: 15px;
+        color: #9AA0A6;
+    }
+}
+@media(max-width: 460px){
+    footer .footer-content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;  
+    }
+    .search-bar {
+         width: 80%; 
+    }
+    .logo-img {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+    .box-2{
+        margin-top: 20px;
+    }
+    .footer-content a{
+        padding: 8px;
+        font-size: 12px;
+    }
+   
+    .search-btns button {
+        height: 30px;
+        font-size: 10px;
+        padding: 0;
+    }
+}
